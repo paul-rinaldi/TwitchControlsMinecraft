@@ -44,9 +44,9 @@ Type in `npm install` and press enter. This will install required dependencies t
 ### 5) Setup Twitch Chat Integration
 Open (https://twitchapps.com/tmi/)[https://twitchapps.com/tmi/] and follow the prompts. This will give you your chat OAuth token which lets the TwitchControlsMinecraft receive updates when anyone sends a message in your chat. This is how the mod tracks voting.
 
-Open the .env file in the TwitchControlsMinecraft directory. It may be hidden on some computers - make sure that your file browser is set to display hidden files and folders.
+Create a file called .env in the `TwitchControlsMinecraft/` directory. It may be hidden on some computers - make sure that your file browser is set to display hidden files and folders.
 
-In the .env file, edit the following lines..
+Make a copy of the .env.example file in the `TwitchControlsMinecraft/` directory, rename it to .env (remove .example from its name), and edit the following lines...
 * Edit the line `TMI_USERNAME=YOUR_CHANNEL_NAME` with your Twitch channel username. For example `TMI_USERNAME=LolThisIsFine`;
 * Edit the line `TMI_PASSWORD=OAUTH_TOKEN` with your OAuth token you copied from the step above. For example `TMI_PASSWORD=oauth:abcdefghijklmnop123456789`;
 * Edit the line `TMI_CHANNEL_NAME=YOUR_CHANNEL_NAME` with your Twitch channel username. For example `TMI_CHANNEL_NAME=LolThisIsFine`;
